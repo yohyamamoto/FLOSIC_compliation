@@ -6,7 +6,7 @@
 
 ### Linux (Redhat based distro)
 
-    sudo dnf install gcc-gfortran openblas-devel lapack-devel git
+    sudo dnf install gcc-gfortran openmpi-devel openblas-devel lapack-devel git
 
 ### Mac OSX
 
