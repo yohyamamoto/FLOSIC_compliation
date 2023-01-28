@@ -38,6 +38,12 @@ Line 10 `MPI=Y`
 
 Change line 10 to `MPI=N`
 
+Comment Line 21-23
+
+    #21 CC = gcc
+    #22 FC = mpif90
+    #23 FFF = mpif90
+
 Uncomment Line 27-29
 
     CC = gcc
@@ -54,6 +60,8 @@ Uncomment Line 265
     
 ### Windows    
     
-Compile the code with `make -f Makefile.fedora`. If the compilation is successful, you will find a nrlmol_exe binary file.
+Compile the code with `make -f Makefile.fedora`. If the compilation is successful, you will find a `nrlmol_exe` binary file.
+
+Note: The common static parameters are specified in `PARAMA` or `PARAMA2`. Every time you make a change to this file, you need to perform `make clean -f Makefile` and `make -f Makefile`.
 
 
