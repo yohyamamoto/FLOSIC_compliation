@@ -6,11 +6,19 @@
 
 ### Linux (Redhat based distro)
 
-    sudo dnf install gcc-gfortran openblas-devel lapack-devel
+    sudo dnf install gcc-gfortran openblas-devel lapack-devel git
 
 ### Mac OSX
 
-The Fortran compilers and libraries are available on homebrew (https://brew.sh/). Once you set up the homebrew, install the necessary packages with
+If not done already, install `XCode commandline tool`. You need it for compiling codes. You can do so by typing `xcode-select --install` in your terminal.
+
+
+The Fortran compilers and libraries are available on homebrew (https://brew.sh/). 
+To set up homebrew, open up terminal and paste the following command,
+
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+Once you set up the homebrew, install the necessary packages with
 
     brew install gcc openblas lapack
     
