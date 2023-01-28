@@ -1,4 +1,4 @@
-# FLOSIC code compliation
+# FLOSIC code compliation (to accompany the NRLMOL and FLOSIC codes)
 
 ## 1. Preparation
 
@@ -80,7 +80,7 @@ The process for Windows using WSL is similar to the process for linux.
     
 Compile the code with `make -f Makefile.fedora`. If the compilation is successful, you will find a `nrlmol_exe` binary file.
 
-Note: The common static parameters are specified in `PARAMA` or `PARAMA2`. Every time you make a change to this file, you need to perform `make clean -f Makefile` and `make -f Makefile`.
+
 
 
 ## 3. NRLMOL_CORI code
@@ -106,6 +106,32 @@ Edit the lines under `# Flags` for compiler flag options
 Compiling the code with `make -f Makefile.ser` (or  `make -f Makefile.mpi`).    
     
 
-## 4. Troubleshoot
 
-If you cannot compile your FLOSIC code, don't panic! Ask for a help to someone who knows.
+
+## 4. Notes
+
+The common static parameters are specified in `PARAMA` or `PARAMA2`. Every time you make a change to this file, you need to perform `make clean -f Makefile` and `make -f Makefile`.
+
+Some of the commonly adjusted parameters in PARAMA/PARAMA2:
+
+**MXSPN**  Maximun spin, 1 for spin unpolarized and 2 for spin polarized calculation
+
+**MAX_FUSET** Max number of function sets
+
+**MAX_IDENT** Max number of inequivalent atoms
+
+**MX_CNT** Max number of equivalent atoms
+
+**MAX_PTS** Max grid points
+
+**MAX_OCC** Max number of occupied states
+
+**MAXUNSYM** Max number of contracted orbitals per atom
+
+**NDH** Max size of Hamiltonian matrix 
+
+**MX_GRP** Max number of group operations
+
+**MAX_REP** Max number of group representations
+
+Finally, if you cannot compile your FLOSIC code, don't panic! Ask for a help to someone who knows.
