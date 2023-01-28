@@ -24,8 +24,7 @@ Once you set up the homebrew, install the necessary packages with
     
 ### Windows 10&11
 
-Install `Windows Subsystem for Linux` (WSL) from Microsoft store if it is not already there. Here, we use `Fedora WSL`. After downloading Windows Subsystem for Linux and Fedora WSL from Miscrosoft store, you will find Fedora icon in the start menu. 
-Now follow the Linux instruction.
+Install `Windows Subsystem for Linux` (WSL) from Microsoft store if it is not already there. Here, we use `Fedora WSL`. After downloading Windows Subsystem for Linux and Fedora WSL from Miscrosoft store, you will find Fedora icon in the start menu. WSL essentailly provides a Linux environment in Windows. Now follow the Linux instruction.
 
 Further reading: https://learn.microsoft.com/en-us/windows/wsl/install
 
