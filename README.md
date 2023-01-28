@@ -14,7 +14,12 @@ The Fortran compilers and libraries are available on homebrew (https://brew.sh/)
 
     brew install gcc openblas lapack
     
-### Windows    
+### Windows 10&11
+
+Install Windows Subsystem for Linux (WSL) from Microsoft store. Here, we use Fedora WSL. After downloading Windows Subsystem for Linux and Fedora WSL from Miscrosoft store, you will find Fedora icon in the start menu. 
+Now follow the Linux instruction.
+
+
 
 ## 1. Download the code from github (https://github.com/FLOSIC/PublicRelease_2020) either using your web browser or using your terminal. 
 
