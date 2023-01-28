@@ -42,25 +42,25 @@ Line 10 `MPI=Y`
 
 ### Mac OSX
 
-Change line 10 to `MPI=N`
+Change line 10 to `MPI=N`. Only the serial compilation is supported on Mac OSX.
 
-Comment Line 21-23
+Under `# COMPILING OPTIONS`, comment Line 21-23 for Linux.
 
     #CC = gcc
     #FC = mpif90
     #FFF = mpif90
 
-Uncomment Line 27-29
+Uncomment Line 27-29 for OSX.
 
     CC = gcc
     FC = gfortran 
     FFF = gfortran
 
-Comment Line 261
+Comment linking option in Line 261 for Linux.
 
 `#        $(FFF) $(LFLAGS) $(OBJ) -o $(BIN) -llapack -lblas $(LIBS)`
 
-Uncomment Line 265
+Uncomment linking option in Line 265 for OSX.
 
 `       $(FFF) $(LFLAGS) $(OBJ) -o $(BIN) -llapack -lblas`
     
