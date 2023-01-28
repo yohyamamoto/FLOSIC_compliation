@@ -1,8 +1,8 @@
 # FLOSIC code compliation
 
-## FLOSIC_2020
+## 1. Preparation
 
-## 0. Install software dependencies
+## Install software dependencies
 
 ### Linux (Redhat based distro)
 
@@ -22,7 +22,9 @@ Now follow the Linux instruction.
 Further reading: https://learn.microsoft.com/en-us/windows/wsl/install
 
 
-## 1. Download the code from github (https://github.com/FLOSIC/PublicRelease_2020) either using your web browser or using your terminal. 
+## 2. FLOSIC_2020 code
+
+## Download the code from github (https://github.com/FLOSIC/PublicRelease_2020) either using your web browser or using your terminal. 
 
 `git clone https://github.com/FLOSIC/PublicRelease_2020.git`
 
@@ -74,7 +76,7 @@ Compile the code with `make -f Makefile.fedora`. If the compilation is successfu
 Note: The common static parameters are specified in `PARAMA` or `PARAMA2`. Every time you make a change to this file, you need to perform `make clean -f Makefile` and `make -f Makefile`.
 
 
-## NRLMOL_CORI
+## 3. NRLMOL_CORI code
 
 Obtain the NRLMOL_CORI code from dropbox or zipped file. 
 
