@@ -73,15 +73,14 @@ Uncomment linking option in Line 265 for OSX.
 
 `       $(FFF) $(LFLAGS) $(OBJ) -o $(BIN) -llapack -lblas`
 
-You may receive -lSystem not found error, if so you need to change `LIBS =` line around line 48 from
+#### Note on MacOS
 
-    LIBS = -llapack -lblas
-    
-to    
+You may receive -lSystem not found error when linking the code on MacOS. If that happens, you need to add one more thing to the linking option. 
+Change the line 265 to    
 
-    LIBS = -llapack -lblas -L/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/lib/
+     $(FFF) $(LFLAGS) $(OBJ) -o $(BIN) -llapack -lblas -L/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/lib/
 
-Change `MacOSX12.1.sdk` accordingly.
+Adjust `MacOSX12.1.sdk` accordingly.
     
 ### Windows  
 
