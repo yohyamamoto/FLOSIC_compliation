@@ -85,7 +85,7 @@ Note: The common static parameters are specified in `PARAMA` or `PARAMA2`. Every
 
 ## 3. NRLMOL_CORI code
 
-Obtain the NRLMOL_CORI code from dropbox or zipped file. 
+Obtain the NRLMOL_CORI code from dropbox or zipped file. **TBA**
 
 Open the Makefile. You may find Makefile.mpi for parallel and Makefile.ser for serial code.
 
