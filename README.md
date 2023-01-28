@@ -72,6 +72,16 @@ Comment linking option in Line 261 for Linux.
 Uncomment linking option in Line 265 for OSX.
 
 `       $(FFF) $(LFLAGS) $(OBJ) -o $(BIN) -llapack -lblas`
+
+You may receive -lSystem not found error, if so you need to change `LIBS =` line around line 48 from
+
+    LIBS = -llapack -lblas
+    
+to    
+
+    LIBS = -llapack -lblas -L/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/lib/
+
+Change `MacOSX12.1.sdk` accordingly.
     
 ### Windows  
 
