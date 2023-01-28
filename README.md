@@ -105,3 +105,7 @@ Edit the lines under `# Flags` for compiler flag options
     
 Compiling the code with `make -f Makefile.ser` (or  `make -f Makefile.mpi`).    
     
+
+## 4. Troubleshoot
+
+If you cannot compile your FLOSIC code, don't panic! Ask for a help to someone who knows.
