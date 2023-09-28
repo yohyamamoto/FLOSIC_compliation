@@ -134,7 +134,7 @@ Your linking option line would looks something like below,
 
   `$(FFF) $(LFLAGS) $(OBJ) -o $(BIN) -L/home/usrname/lib/ -L/opt/ohpc/pub/libs/gnu8/openblas/0.3.7/lib/ -llapack -lopenblas $(LIBS)`
 
-If everything is set up correctly in the Makefile, you can hit: make (or make -f Makefile.fedora)
+If everything is set up correctly in the Makefile, you can hit: `make` (or `make -f Makefile.fedora`)
 
 
 ## 5. Notes
