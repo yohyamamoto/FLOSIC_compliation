@@ -117,7 +117,7 @@ Compiling the code with `make -f Makefile.ser` (or  `make -f Makefile.mpi`).
 
 ## 4. Notes for compiling the code on UTEP Jakar
 
-Jakar does not have a working lapack (at the moment of writing this). But you can compile it in your home directory. You only need to do this once.
+Jakar does not have a working lapack (at the moment of writing this). But you can compile it in your home directory. You only need to do this once. Run a sequence of command in your home directory as follows,
 
     wget https://github.com/Reference-LAPACK/lapack/archive/refs/tags/v3.10.0.tar.gz
     tar zxvf v3.10.0.tar.gz
@@ -129,12 +129,12 @@ Jakar does not have a working lapack (at the moment of writing this). But you ca
 
 Copy the **liblapack.a** in your /home/username/lib and use that path as the **path_to_liblapack.a** 
 
-Open Makefile (Makefile.fedora) and edit your linking options. Replace `-llapack -lblas` with `-L/path_to_liblapack.a/ -L/opt/ohpc/pub/libs/gnu8/openblas/0.3.7/lib/ -llapack -lopenblas`
+Open FLOSIC code Makefile (Makefile.fedora) and edit your linking options. Replace `-llapack -lblas` with `-L/path_to_liblapack.a/ -L/opt/ohpc/pub/libs/gnu8/openblas/0.3.7/lib/ -llapack -lopenblas`
 Your linking option line would looks something like below,
 
   `$(FFF) $(LFLAGS) $(OBJ) -o $(BIN) -L/home/usrname/lib/ -L/opt/ohpc/pub/libs/gnu8/openblas/0.3.7/lib/ -llapack -lopenblas $(LIBS)`
 
-If everything is set up correctly in the Makefile, you can hit: `make` (or `make -f Makefile.fedora`)
+If everything is set up correctly in the FLOSIC code Makefile, you can hit: `make` (or `make -f Makefile.fedora`)
 
 
 ## 5. Notes
