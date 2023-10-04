@@ -117,6 +117,14 @@ Compiling the code with `make -f Makefile.ser` (or  `make -f Makefile.mpi`).
 
 ## 4. Notes for compiling the code on UTEP Jakar
 
+UTEP Jakar has a weird set up where modules are not functioning as they should be. Here's the compilation notes.
+
+First load necessary modules.
+
+     module load gnu8 openmpi3 scalapack
+
+
+
 Jakar does not have a working lapack (at the moment of writing this). But you can compile it in your home directory. You only need to do this once. Run a sequence of command in your home directory as follows,
 
     wget https://github.com/Reference-LAPACK/lapack/archive/refs/tags/v3.10.0.tar.gz
@@ -133,6 +141,10 @@ Open FLOSIC code Makefile (Makefile.fedora) and edit your linking options. Repla
 Your linking option line would looks something like below,
 
   `$(FFF) $(LFLAGS) $(OBJ) -o $(BIN) -L/home/usrname/lib/ -L/opt/ohpc/pub/libs/gnu8/openblas/0.3.7/lib/ -llapack -lopenblas $(LIBS)`
+
+In addition, if you are using scalapack you will need to specify the location of the scalapack.
+
+   -L/opt/ohpc/pub/libs/gnu8/openmpi3/scalapack/2.0.2/lib -lscalapack
 
 If everything is set up correctly in the FLOSIC code Makefile, you can hit: `make` (or `make -f Makefile.fedora`)
 
